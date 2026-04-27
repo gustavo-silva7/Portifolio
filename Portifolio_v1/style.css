@@ -117,3 +117,10 @@ body {
   max-width: 400px;
   border-radius: 40px;
 }
+
+/* SECTION PROJETOS */
+/* Organização dos cards dos projetos */
+.projetos{
+  display: grid;
+  
+}
