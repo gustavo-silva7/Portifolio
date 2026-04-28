@@ -67,12 +67,12 @@ header{
 }
 
 /* Menu de navegação, formatação geral. Não tem muito oq fazer nessa parte */
-.header-menu {
+.header-menu{
   display: flex;
   gap: 65px;
 }
 
-.header-menu a {
+.header-menu a{
   text-decoration: none;
   color: var(--text-primary);
   font-size: 18px;
@@ -83,7 +83,7 @@ header{
 }
 
 /* Movimentação quando passar o mouse em cima da palavras do menu.*/
-.header-menu a:hover {
+.header-menu a:hover{
   background-color: var(--accent);
   color: #fff;
   transform: translateY(-3px);
@@ -91,12 +91,12 @@ header{
 
 
 /* Formatação do corpo do portifolio */
-body {
+body{
   background-color: var(--bg-body);
   color: var(--text-primary);
 }
 
-.inicio-sobre {
+.inicio-sobre{
   display: flex;
   align-items: center;
   gap: 100px;
@@ -113,14 +113,96 @@ body {
   margin-top: 16px;
 }
 
-.inicio-image img {
+.inicio-image img{
   max-width: 400px;
   border-radius: 40px;
 }
 
 /* SECTION PROJETOS */
 /* Organização dos cards dos projetos */
+
+/* SECTION PROJETOS */
 .projetos{
+  padding: 2rem 1rem;
+}
+
+/* Espaçamento entre blocos */
+.main-projects{
+  margin-bottom: 3rem;
+}
+
+/* GRID CORRETO (featured) */
+.cards-main{
   display: grid;
-  
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* GRID CORRETO (secundários) */
+.cards-second{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+/* CARD BASE */
+.card{
+  background: #2a2b2f;
+  padding: 1.2rem;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* HOVER (mínimo aceitável hoje) */
+.card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* FEATURED (diferenciação real) */
+.card--featured{
+  min-height: 180px;
+  border: 1px solid #444;
+}
+
+/* TIPOGRAFIA */
+.card h3{
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.card p{
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* TAGS */
+.tags{
+  margin-top: 0.8rem;
+}
+
+.tags span {
+  display: inline-block;
+  background: #3a3b40;
+  padding: 4px 8px;
+  margin-right: 5px;
+  margin-top: 5px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+/* LINKS */
+.actions{
+  margin-top: 1rem;
+}
+
+.actions a{
+  margin-right: 10px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: #4ea1ff;
+}
+
+.actions a:hover{
+  text-decoration: underline;
 }
